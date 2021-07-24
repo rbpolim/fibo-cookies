@@ -6,7 +6,7 @@ export function Navbar({ toggle, isOpen }) {
     <nav className="flex items-center bg-yellow-300 p-6 font-mono shadow-lg">
       <div className="flex flex-grow cursor-pointer">
         <Link href="/">
-          <h1 className="text-lg">COOKIES</h1>
+          <h1 className="text-lg tracking-wider">COOKIES</h1>
         </Link>
       </div>
 
