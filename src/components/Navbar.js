@@ -1,19 +1,16 @@
 import Link from "next/link";
-import { useRouter } from "next/router";
 import { MenuIcon } from "@heroicons/react/solid";
 
-export function Navbar() {
-  const router = useRouter();
-
+export function Navbar({ toggle, isOpen }) {
   return (
-    <nav className="flex items-center bg-yellow-300 p-6 font-mono">
+    <nav className="flex items-center bg-yellow-300 p-6 font-mono shadow-lg">
       <div className="flex flex-grow cursor-pointer">
         <Link href="/">
           <h1 className="text-lg">COOKIES</h1>
         </Link>
       </div>
 
-      <div className="mr-4">
+      <div className="hidden md:inline-flex mr-4">
         <ul className="flex items-center space-x-6">
           <li className="link">
             <Link href="/">MENU</Link>
@@ -29,8 +26,8 @@ export function Navbar() {
         </ul>
       </div>
 
-      <div className="hidden cursor-pointer">
-        <MenuIcon className="h-10" />
+      <div onClick={toggle} className="md:hidden cursor-pointer">
+        <MenuIcon className="h-8" />
       </div>
     </nav>
   );
