@@ -9,6 +9,10 @@
   }
 
   .button {
-    @apply p-4 rounded-md bg-yellow-300 border border-yellow-300 focus:outline-none focus:ring-2 focus:ring-yellow-600 hover:bg-yellow-400;
+    @apply p-4 rounded-md bg-yellow-300 border border-yellow-300 focus:outline-none focus:ring-2 focus:ring-yellow-600 hover:bg-yellow-400 cursor-pointer;
+  }
+
+  .buttonTwo {
+    @apply p-4 rounded-md bg-black border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-700 hover:bg-gray-900 cursor-pointer text-white;
   }
 }
