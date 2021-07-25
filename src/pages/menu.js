@@ -1,10 +1,13 @@
+import { Footer } from "../components/Footer";
 import { Navbar } from "../components/Navbar";
+import { ProductFeed } from "../components/ProductFeed";
 
 export default function Menu() {
   return (
-    <div>
+    <>
       <Navbar />
-      <h1>Products</h1>
-    </div>
+      <ProductFeed />
+      <Footer />
+    </>
   );
 }

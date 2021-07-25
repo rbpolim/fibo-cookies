@@ -18,7 +18,6 @@ export default function Home() {
       <Head>
         <title>Fibo Cookies</title>
       </Head>
-
       <Navbar isOpen={isOpen} toggle={toggle} />
       <Dropdown isOpen={isOpen} />
       <Hero />
