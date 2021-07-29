@@ -1,11 +1,14 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { useSelector } from "react-redux";
 import { MenuIcon, ShoppingCartIcon } from "@heroicons/react/solid";
 
 import { useAuth } from "../hooks/useAuth";
+import { selectItems } from "../slices/basketSlice";
 
 export function Navbar({ toggle }) {
   const router = useRouter();
+  const items = useSelector(selectItems);
 
   const { user, signInWithGoogle } = useAuth();
 
@@ -44,15 +47,15 @@ export function Navbar({ toggle }) {
               </h1>
             </div>
             <div
-              onClick={() => router.push("/")}
+              onClick={() => router.push("/checkout")}
               className="relative link flex items-center"
             >
-              <span className="absolute top-0 right-0 md:right-10 h-4 w-4 text-center rounded-full text-black bg-white font-bold">
-                0
+              <span className="absolute text-center text-xs top-0 right-0 md:right-10 h-4 w-4 rounded-full text-black bg-white font-bold">
+                {items.length}
               </span>
               <ShoppingCartIcon className="h-10" />
-              <p className="hidden md:inline font-extrabold md:text-sm mt-2">
-                Basket
+              <p className="hidden md:inline tracking-wider md:text-sm mt-2">
+                BASKET
               </p>
             </div>
           </div>
