@@ -22,7 +22,7 @@ export function CheckoutProduct({ id, image, title, description, price }) {
   };
 
   return (
-    <div className="grid grid-cols-5 bg-yellow-50 rounded-lg">
+    <div className="grid grid-cols-5 bg-white rounded-lg shadow-md p-2">
       <Image
         src={image}
         alt={title}
@@ -41,7 +41,7 @@ export function CheckoutProduct({ id, image, title, description, price }) {
         <button onClick={addItemToBasket} className="buttonThree text-xs">
           Add to basket
         </button>
-        <button onClick={removeItemFromBasket} className="buttonThree text-xs">
+        <button onClick={removeItemFromBasket} className="buttonRemove text-xs">
           Remove from basket
         </button>
       </div>

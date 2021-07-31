@@ -5,6 +5,6 @@
 [x] - Data products (requests);
 [x] - Add a product to Basket with REDUX;
 [x] - Page Checkout Product;
-[ ] - Remove a product from Basket with REDUX;
-[ ] - Fix CSS products;
+[x] - Remove a product from Basket with REDUX;
+[x] - Fix CSS products;
 [ ] - Change component name Navbar to Header (much better);
