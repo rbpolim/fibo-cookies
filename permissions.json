@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "fibo-cookies-next",
+  "private_key_id": "d59ed3096887c2c64922696d8cb97bbdea70a23c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDoSscWhn3o7V9c\n+/I9RF9/E5wB6HqbwmmUdxlpC2vut3wS3f2ucyguC2aXpD2Tc4K/Js+ODZdW/Ft5\n+BcfocKSpNfutFACFXE6VjqLie0a8JyzoCJwMXtazNxaD3fTZ+PAr9w5DhPJQRLk\n8yTsmdCs28CseXl1wTkGI3YA/0+9EjfprA7XMUx6sVWKqkf4qsw/SL3/xio15hpI\njEuxwMDXTscMjrLhpdaTAEG1PlhexAgJVN5zGYNzVGpo/y2ZBTtoOPV4RFzD7JIU\nGHtIctQd67GK1NPfyKQujDNNUuaqNVsirDtw9i50hd10dFobBoB6d/KsbBQlMRi+\nExVoJnr5AgMBAAECggEAGW0u/eeWkmeiPcG7xipM6DJnrBtMCW7mQuim/MUx6SlH\nMOMA/MaQ5jpb/lsNXO2iyQTo6PASqeQ5aKBH+q/Ihif6VWACFnpNoLC125aLQDzI\ncE6F2oFGEv4z2/1PtNGtP8cYLFwevROtC2fUebwL+BHdVRu+WG4ALYx14x3PNv8Z\nOW4R6MTJ7KfqpGaXquYPA/fhdctud83p0o/HSpznGi/pUsOePZp8IRJJ0RCSy9T6\nM3F+rZp2Up+m32t47yf6xczKymA5iNypdx8/tOYnJr2VE6FsERptN60+0rgxWw8D\nL4IPFXcgmszBy0ldG522JIEWd2HJBeiUwKqQ9aNZ8QKBgQD8vDrH2MVidJpXRV1Q\n21FcC6EUkz9XhCoQnigRQOYJuWtgKm8UjNW/IPkbGLhh7hhk4zw9uhT7zYpvqjis\nfkpaDyz4LXL6DE+g1oW/3ev6HjlwX3fhSIdtdcSMQnmJ27Rx2YZLOWRiu3B4RB4e\nF667AArcnoDktje6I1v+yRK1SQKBgQDrSvHNgE25wEsKO2zNzt8isvp2BBul0uC/\n/NmYxuVecAY0XhhkT5Xv28BhR8tq5rX+e1SSbUcIrV5nPy4f6IJUN2onQyLKChBL\npWLGncgf2qL96BJ6CGKL80jPYexLvn1VfF38HhmNhj6WVzT7qHTS/b0r8vCXNzXn\n075uSCuIMQKBgQDCZGUx4eGwYM914LxtvMNPcQJsuPU3c0iHj55x5uEJCb01Mm5N\n+CVP5SS1WsY3TNMmhkGHmOEa7HVWfi8pPdoiexmzqgGNonp804P8l80xjJ3ReRzU\nAt1nq/WJjHe/OWYJS66nnXVBG7reRkaEDuMuolG4b5HkWON0IE5aIn5pQQKBgQDP\n1a5K6Hc/iXR/QEh2brI4s0F7N1u4mNH/o/gM9DsstOU2IpuHF6mIamK/SyyKa+n8\nNLJaeP5S0tjdeDhk5PsiKqSws6OqNUN5nkfmyv437OcmQnT3qCpsFmSNEqEnssaA\n2U8nYOsPULI+GB/r3zv6Fzme9YPA/nq2IRpHzaXuMQKBgFtxoQK051CPR0QnpEwT\nMG+3JHn0OMbKcfg7ta9NpGoIdvrI1c/BxMq4n7ySRXaJEBTozzkhRXdJyHOTmNz0\noC7sqGpM97UmDiohTIcFLzqTUNssxDQ2wsW1Ox5mofSOPpVzdGIWx4fb+gQlQIOj\n5CuH4oD2FTw1Qeim9L3mrIgq\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-plz0u@fibo-cookies-next.iam.gserviceaccount.com",
+  "client_id": "102411543055785262559",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-plz0u%40fibo-cookies-next.iam.gserviceaccount.com"
+}
