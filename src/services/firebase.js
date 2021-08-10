@@ -1,6 +1,4 @@
-import firebase from "firebase/app";
-
-import "firebase/auth";
+import firebase from "firebase";
 
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
@@ -11,10 +9,10 @@ const firebaseConfig = {
   appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
 };
 
-if (!firebase.apps.length) {
-  firebase.initializeApp(firebaseConfig);
-}
+const app = !firebase.apps.length
+  ? firebase.initializeApp(firebaseConfig)
+  : firebase.app();
 
-const auth = firebase.auth();
+const db = app.firestore();
 
-export { firebase, auth };
+export default db;

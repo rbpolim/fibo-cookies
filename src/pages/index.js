@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Head from "next/head";
+import { getSession } from "next-auth/client";
 
 import { Navbar } from "../components/Navbar";
 import { Dropdown } from "../components/Dropdown";
@@ -24,4 +25,14 @@ export default function Home() {
       <Footer />
     </div>
   );
+}
+
+export async function getServerSideProps(context) {
+  const session = await getSession(context);
+
+  return {
+    props: {
+      session,
+    },
+  };
 }

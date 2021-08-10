@@ -22,7 +22,7 @@ export function CheckoutProduct({ id, image, title, description, price }) {
   };
 
   return (
-    <div className="grid grid-cols-5 bg-white rounded-lg shadow-md p-2">
+    <div className="grid grid-cols-5 bg-white border-b p-2">
       <Image
         src={image}
         alt={title}
@@ -33,16 +33,16 @@ export function CheckoutProduct({ id, image, title, description, price }) {
 
       <div className="flex flex-col justify-evenly col-span-3 ml-4">
         <h1 className="font-black">{title}</h1>
-        <p className="text-gray-900 italic">{description}</p>
+        <p className="text-gray-900 italic text-xs">{description}</p>
         <span>${price}</span>
       </div>
 
       <div className="flex flex-col space-y-2 my-auto mr-4 justify-self-end">
         <button onClick={addItemToBasket} className="buttonThree text-xs">
-          Add to basket
+          ADD TO BASKET
         </button>
         <button onClick={removeItemFromBasket} className="buttonRemove text-xs">
-          Remove from basket
+          REMOVE FROM BASKET
         </button>
       </div>
     </div>

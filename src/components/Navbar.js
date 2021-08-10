@@ -1,22 +1,16 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useSelector } from "react-redux";
+import { useSession, signIn, signOut } from "next-auth/client";
 import { MenuIcon, ShoppingCartIcon } from "@heroicons/react/solid";
 
-import { useAuth } from "../hooks/useAuth";
 import { selectItems } from "../slices/basketSlice";
 
 export function Navbar({ toggle }) {
   const router = useRouter();
   const items = useSelector(selectItems);
 
-  const { user, signInWithGoogle } = useAuth();
-
-  const handleSignIn = async () => {
-    if (!user) {
-      await signInWithGoogle();
-    }
-  };
+  const [session] = useSession();
 
   return (
     <nav className="flex items-center bg-yellow-300 p-6 font-mono shadow-lg sticky z-50 top-0 opacity-90">
@@ -38,12 +32,12 @@ export function Navbar({ toggle }) {
       </div>
 
       <div className="mr-6">
-        {user ? (
+        {session ? (
           <div className="flex">
             <div className="mr-4 flex flex-col">
               <p className="text-sm">Welcome,</p>
               <h1 className="font-black border-b-2 border-black">
-                {user?.name}
+                {session.user.name}
               </h1>
             </div>
             <div
@@ -61,7 +55,7 @@ export function Navbar({ toggle }) {
           </div>
         ) : (
           <button
-            onClick={handleSignIn}
+            onClick={signIn}
             className="link bg-white p-2 rounded-md border-yellow-300 focus:outline-none focus:ring-2 focus:ring-yellow-700"
           >
             SIGN UP

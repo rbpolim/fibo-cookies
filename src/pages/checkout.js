@@ -1,8 +1,8 @@
 import Head from "next/head";
 import axios from "axios";
 import { useSelector } from "react-redux";
+import { useSession } from "next-auth/client";
 
-import { useAuth } from "../hooks/useAuth";
 import { selectItems, selectTotal } from "../slices/basketSlice";
 
 import { Navbar } from "../components/Navbar";
@@ -15,7 +15,7 @@ export default function Checkout() {
   const items = useSelector(selectItems);
   const total = useSelector(selectTotal);
 
-  const { user } = useAuth();
+  const [session] = useSession();
 
   const handleCreateCheckoutSession = async () => {
     const stripe = await stripePromise;
@@ -23,7 +23,7 @@ export default function Checkout() {
     // call the backend to create a Stripe Session;
     const checkoutSession = await axios.post("/api/create-checkout-session", {
       items,
-      email: user.email,
+      email: session.user.email,
     });
 
     // redirect user/customer to the checkout session;
@@ -43,8 +43,8 @@ export default function Checkout() {
       </Head>
       <Navbar />
 
-      <div className="bg-yellow-50 relative h-screen font-mono">
-        <main className=" max-w-3xl mx-auto space-y-6 p-8">
+      <main className="relative mt-4 p-8 lg:flex font-mono max-w-4xl mx-auto ">
+        <div className="flex-grow space-y-6 ">
           {items.length > 0 ? (
             <h1 className="text-2xl font-bold border-b-4 border-gray-100 ">
               Your Basket:{" "}
@@ -65,23 +65,22 @@ export default function Checkout() {
               price={item.price}
             />
           ))}
+        </div>
 
-          <div className="flex font-black">
+        <div className="flex flex-col mt-8 lg:ml-10">
+          <div className="flex font-black whitespace-nowrap">
             <h2>Subtotal ({items.length} items):</h2>
             <span className="ml-2">${total}</span>
           </div>
-
-          <div>
-            <button
-              role="link"
-              onClick={handleCreateCheckoutSession}
-              className="buttonTwo"
-            >
-              Proceed to Checkout
-            </button>
-          </div>
-        </main>
-      </div>
+          <button
+            role="link"
+            onClick={handleCreateCheckoutSession}
+            className="buttonTwo mt-2"
+          >
+            {!session ? "Sign in to checkout" : "Proceed to checkout"}
+          </button>
+        </div>
+      </main>
     </div>
   );
 }
