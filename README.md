@@ -2,17 +2,11 @@
 
 Web site e-commerce com vendas de Cookies 🍪
 
+![fibo-cookies](https://user-images.githubusercontent.com/66570560/129126483-60b50926-2a58-4232-951d-e22bd4f7e1ba.png)
+
 ## Demo
 
-Insert gif or link to demo
-
-## Authors
-
-- [@rbpolim](https://www.github.com/rbpolim)
-
-## Screenshots
-
-![fibo-cookies](https://user-images.githubusercontent.com/66570560/129126483-60b50926-2a58-4232-951d-e22bd4f7e1ba.png)
+https://fibo-cookies.vercel.app/
 
 ## Lessons Learned
 
@@ -38,3 +32,7 @@ Nesse projeto consegui colocar em prática alguns dos conceitos e ferramentas qu
 - Autenticação do usuário com e-mail Google;
 - Página de sucesso;
 - Página com o histórico de pedidos já realizados;
+
+## Authors
+
+- [@rbpolim](https://www.github.com/rbpolim)
