@@ -1,5 +1,5 @@
-import { useState } from "react";
 import Head from "next/head";
+import { useState } from "react";
 import { getSession } from "next-auth/client";
 
 import { Navbar } from "../components/Navbar";

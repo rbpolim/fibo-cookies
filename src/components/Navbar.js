@@ -34,7 +34,10 @@ export function Navbar({ toggle }) {
       <div className="mr-6">
         {session ? (
           <div className="flex">
-            <div className="mr-4 flex flex-col">
+            <div
+              onClick={signOut}
+              className="mr-4 flex flex-col cursor-pointer"
+            >
               <p className="text-sm">Welcome,</p>
               <h1 className="font-black border-b-2 border-black">
                 {session.user.name}
