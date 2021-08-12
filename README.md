@@ -24,7 +24,6 @@ Nesse projeto consegui colocar em prática alguns dos conceitos e ferramentas qu
 
 **Client:** React, Next, Redux, TailwindCSS
 
-https://user-images.githubusercontent.com/66570560/129282680-f9ad84e2-b0eb-42fd-a955-72bcd6fce18b.mp4
 
 ## Features
 
